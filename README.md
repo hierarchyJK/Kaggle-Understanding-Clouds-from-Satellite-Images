@@ -15,15 +15,16 @@
 本比赛集成了以下两个single模型：<br>
 * Unet(resnet34)(5-flod)<br>
 * FPN(resnet34)<br>
+##### 排名
+276/1538(18%)<br>
+LB:0.65521 <br>
+PB:0.6485
 ## 文件说明
 * [`Shallow_clould_CV.py`](https://github.com/hierarchyJK/Kaggle-Understanding-Clouds-from-Satellite-Images/blob/master/Shallow_clould_CV.py): 生成交叉验证数据集<br>
 * [`Shallow_smp.py`](https://github.com/hierarchyJK/Kaggle-Understanding-Clouds-from-Satellite-Images/blob/master/Shallow_smp.py):训练文件<br>
 * [`Shallow_clouds_interface.py`](https://github.com/hierarchyJK/Kaggle-Understanding-Clouds-from-Satellite-Images/blob/master/Shallow_clouds_interface.py): 预测推理文件<br>
 * [`Exploring_Predictions.py`](https://github.com/hierarchyJK/Kaggle-Understanding-Clouds-from-Satellite-Images/blob/master/Exploring_Predictions.py): 利用验证集寻找post_process()函数中的最优的threshold和minsize<br>
-###### 排名
-276/1538(18%)<br>
-LB:0.65521 <br>
-PB:0.6485
+
 ### 后期同类型比赛尝试方向：
 * 1、根据所有训练集搭建`classification_model`分类模型；
 * 2、去除没有mask的训练集后，利用存在至少又一个mask的图片搭建`segmentation_model`分割模型；
