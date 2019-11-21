@@ -16,7 +16,7 @@
 * Unet(resnet34)(5-flod)<br>
 * FPN(resnet34)<br>
 ## 文件说明
-* `Shallow_clould_CV.py`: 生成交叉验证数据集<br>
+* [`Shallow_clould_CV.py`](https://github.com/hierarchyJK/Kaggle-Understanding-Clouds-from-Satellite-Images/blob/master/Exploring_Predictions.py): 生成交叉验证数据集<br>
 * `Shallow_smp.py`:训练文件<br>
 * `Shallow_clouds_interface.py`: 预测推理文件<br>
 * `Exploring_Predictions.py`: 利用验证集寻找post_process()函数中的最优的threshold和minsize<br>
