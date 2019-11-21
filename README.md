@@ -11,3 +11,7 @@
 ## 数据集划分
 >根据图片包含的浅云类别数量， 利用库函数`StratifiedKFold`进行数据划分
 ## 模型
+运用了[segmentation_models_pytorch](https://github.com/qubvel/segmentation_models.pytorch)
+本比赛集成了以下两个single模型：<br>
+* Unet(resnet34)(5-flod)<br>
+* FPN(resnet34)<br>
