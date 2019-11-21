@@ -21,7 +21,7 @@
 * [`Shallow_clouds_interface.py`](https://github.com/hierarchyJK/Kaggle-Understanding-Clouds-from-Satellite-Images/blob/master/Shallow_clouds_interface.py): 预测推理文件<br>
 * [`Exploring_Predictions.py`](https://github.com/hierarchyJK/Kaggle-Understanding-Clouds-from-Satellite-Images/blob/master/Exploring_Predictions.py): 利用验证集寻找post_process()函数中的最优的threshold和minsize<br>
 ###### 排名
-276/1538(18%)
+276/1538(18%)<br>
 LB:0.65521 PB:0.6485
 ### 后期同类型比赛尝试方向：
 * 1、根据所有训练集搭建`classification_model`分类模型；
