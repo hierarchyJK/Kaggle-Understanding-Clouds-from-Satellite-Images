@@ -20,4 +20,10 @@
 * [`Shallow_smp.py`](https://github.com/hierarchyJK/Kaggle-Understanding-Clouds-from-Satellite-Images/blob/master/Shallow_smp.py):训练文件<br>
 * [`Shallow_clouds_interface.py`](https://github.com/hierarchyJK/Kaggle-Understanding-Clouds-from-Satellite-Images/blob/master/Shallow_clouds_interface.py): 预测推理文件<br>
 * [`Exploring_Predictions.py`](https://github.com/hierarchyJK/Kaggle-Understanding-Clouds-from-Satellite-Images/blob/master/Exploring_Predictions.py): 利用验证集寻找post_process()函数中的最优的threshold和minsize<br>
-
+###### 排名
+276/1538(18%)
+LB:0.65521 PB:0.6485
+### 后期同类型比赛尝试方向：
+* 1、根据所有训练集搭建`classification_model`分类模型；
+* 2、去除没有mask的训练集后，利用存在至少又一个mask的图片搭建`segmentation_model`分割模型；
+* 3、对测试集进行推断时候，先用`classification_model`将没有mask的图片预测出来，再利用`segmentation_model`分割模型对剩下图片进行mask预测，最后将两个结构concat一下
